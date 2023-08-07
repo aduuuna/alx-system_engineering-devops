@@ -1,2 +1,2 @@
 #!/bin/bash
-sed '$!d' iacta >> iacta
+tail n l < iacta >> iacta
