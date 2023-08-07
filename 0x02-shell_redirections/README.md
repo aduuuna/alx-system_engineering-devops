@@ -1,1 +1,2 @@
-0x02. shell redirections project
+
+0x02. Shell, I/O Redirections and filters
