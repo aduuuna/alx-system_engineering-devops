@@ -2,3 +2,19 @@
 
 https://drive.google.com/file/d/1hdcbaGAgpiias7zsEf25HLgfxcbWzebO/view?usp=sharing
 
+1. A server is a computer that provides services and resources to other computer or devices over a network.
+
+2. The domain name is the unique web address that identifies a specific website or online resources
+
+3. The type of "wwww" subdomain in "wwww.foobar.com" uses Cname record in Domain Name System (DNS)
+
+4. When a user requests "www.foobar.com", the web server's role is to store the website files for "foobar.com" and deliver that content to the user's web browser when the request is made. The web server listens for the request to "www.foobar.com" and responds by sending the appropriate web content back to the user.
+
+5. The application server runs the actual web application software. It takes the requests from the web server, does whatever processing or data fetching needs to happen, and then sends the generated web pages back to the web server. The web server can then deliver that dynamic content to the user's browser
+
+6. Single Point of Failure (SPOF): With just a single web server and application server, if either one goes down, the entire website will be unavailable. This creates a single point of failure that can bring the site down.
+
+7. Maintenance Downtime: Whenever the web server or application server needs to be restarted, for example to deploy new code, the website will experience downtime and be inaccessible during that period.
+
+8. Scaling Challenges: If traffic to the website increases significantly, the single web server and application server may not be able to handle the load. This could result in slow performance or even crashes, as the system is unable to scale to meet the higher demand.
+
