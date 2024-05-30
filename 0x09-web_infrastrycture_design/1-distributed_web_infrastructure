@@ -1,0 +1,10 @@
+Task 2 -> https://drive.google.com/file/d/1WILVLM3ffhzHURudTNH9WdtHu3hV4S1f/view?usp=sharing
+
+
+1. I think we are adding additional elemnets, that is the two servers and the load balancer to address the issues we discussed in the intial web structure
+
+Having multiple servers eliminats single point failure from the previous architecture. That is if one server goes down, otherservers can take over.
+ 
+And also the load balancer will help distribute incoming traffic across the multiple web and application servers without performance degrading
+
+2. The loader balancer uses the round-robbin approach which ensures that workload are evenly distributed across all servers without any single server becoming a bottleneck. So the laod balancer in the end improves performance and reliability of the website
