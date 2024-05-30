@@ -8,3 +8,17 @@ Having multiple servers eliminats single point failure from the previous archite
 And also the load balancer will help distribute incoming traffic across the multiple web and application servers without performance degrading
 
 2. The loader balancer uses the round-robbin approach which ensures that workload are evenly distributed across all servers without any single server becoming a bottleneck. So the laod balancer in the end improves performance and reliability of the website
+
+3. For Active- Active setup, all servers are actively processing requests at the same time when the loader balancer distributes incoming traffic evenly across all available servers but for the Ative- Passive setup,there's one active server that is handling all the live traffic while the other servers (passive) servers are on standby ready to take over if the active server fails. 
+
+4. For the primary-replica (or master-slave) cluster this is how it works. All write operations (insert,delete,update) go to the primary/ master database. The primary database then logs all these writes operations and streams the changes to the reploca/slave database. Now the replica database apply these changes to keep themselves in sysnc with the primary. But for the read operations (select queries), the load balancer can distribute the traffic across the primary and replica database.
+
+5. For the primary node, all write operations( insert, update, delete) go to the primary node and it's the main database whiles the replica node recieves updates from the promary node and mirror data and it can be used to handle read-heavy operations.
+
+6. SPOF - If the primary database goes down, the entire system will be unavailable for writes and also loosing the primary node could results in data loss or inconsistency
+
+   Security Issues - The application is communicating with the database over an unsecured HTTP connection, without HTTPS encryption. This leaves the system vulnerable to unauthorized access and attcks
+
+   Lack of monitoring - There's no monitoring or alerting system to detect issues with the database cluster and problems like node failures go unnoticed
+
+
