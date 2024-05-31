@@ -1,0 +1,9 @@
+Task 4 -> https://drive.google.com/file/d/1LdnJ2hlKdvh2osfX64Yc1Sl7fEVxnkX2/view?usp=sharing
+
+
+1. These are the reasons for the add ups
+
+
+   Adding a new server increases the overall capacity and redundancy of the system. Also adding another load balancer cluster (HAProxy) provides redundancy and failover capabilities that is if one load balancer fails, the other can take over ensuring the uniterrupted service. Hence this improves the overall availability and reliablity of the load balancing layer
+
+   Also spliting the components onto seperste servers improves the isolation and compartmentalization of the infrastructure. If one of the component experiences isues, it's lwsslikely to affect the other component, reducing the impact on the overall system.
