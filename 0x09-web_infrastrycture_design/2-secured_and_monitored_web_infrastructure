@@ -1,0 +1,22 @@
+Task 3 -> https://drive.google.com/file/d/1FXPzoM1kAIoIVAvBEbnrKjSGXVJTXHHf/view?usp=sharing
+
+
+
+1. These are the reasons why we added these new elements, we added the 3 firewalls to protect database cluster from unauthorized access and external threats. 
+1 SSL Certificate for HTTPS was added to encrypt the communication between the application and the database, improving security. And lastly the monitoring server was added to enable monitoring and observation of the database infrastructure, to detect issues and get alert on problems
+
+2. Firewalls helps to block unwanted visitors or unauthorized people from getting into the database and it can also help block anything that is suspicious or dangerous
+
+3. The traffic is served over HTTPS to help keep the databse secure by encrypting it
+
+4. The Monitoring enables monitoring  and observability of the databse infrausture and it also helps to measure performance, and get alert on problems
+
+5. The monitoring tool collects data in either from agents on servers, network traffic monitoring, direct database monitoring and API monitoring
+
+6. To monitor Queries Per second (QPS) you can set a monitoring tool like Sumo Logic and configure the web server to expose a metrics endpoint. After that, you configure the monitoring tool to scrape the metrics endpoint periodically and finally deine an alert rule to notify you if the QPS exceeds a certain threshold
+
+7. SSL Termination at the Load Balanacer: This implies that the application server has to handle unencrypted traffic. It also increases the attack surface and can compromise the security of the whole  system.
+
+8. Single MySQL server writes: With a single MySQL server, if the server goes doen, the entire system will lose the ability to write data which can be a very serious issue.
+
+9. Identical Server Components: Having the same components on all servers, the failure on one of the servers can affect the entire system.
